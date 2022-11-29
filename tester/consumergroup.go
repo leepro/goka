@@ -8,8 +8,8 @@ import (
 
 	"github.com/Shopify/sarama"
 	"github.com/hashicorp/go-multierror"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/multierr"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/multierr"
 )
 
 // consumerGroup mocks the consumergroup

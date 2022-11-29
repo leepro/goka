@@ -8,8 +8,8 @@ import (
 	"syscall"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/codec"
 )
 
 var (

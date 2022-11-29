@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/codec"
 	"github.com/stretchr/testify/require"
 )
 

@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/multierr"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/codec"
+	"github.com/leepro/goka/multierr"
 	"github.com/stretchr/testify/require"
 )
 
 // Tests a processor with multiple input topics. Random values are emitted to random topics, the values are accumulated
 // for a single key and checked for correctness after emitting a couple of messages.
-// This is a regression/showcase test for https://github.com/lovoo/goka/issues/332
+// This is a regression/showcase test for https://github.com/leepro/goka/issues/332
 func TestMultiTopics(t *testing.T) {
 	brokers := initSystemTest(t)
 	var (

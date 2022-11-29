@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/codec"
-	"github.com/lovoo/goka/multierr"
-	"github.com/lovoo/goka/storage"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/codec"
+	"github.com/leepro/goka/multierr"
+	"github.com/leepro/goka/storage"
 	"github.com/stretchr/testify/require"
 )
 
@@ -613,7 +613,6 @@ func TestProcessorSlowStuck(t *testing.T) {
 // * Emit 10 messages with key/value "1"/1 into one topic
 // * Create a processor that consumes+accumulates this one value into its state. The final state obviously is 10.
 // * restart this processor a couple of times and check whether it stays 10.
-//
 func TestMessageCommit(t *testing.T) {
 	t.Parallel()
 	brokers := initSystemTest(t)

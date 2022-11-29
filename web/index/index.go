@@ -5,8 +5,8 @@ import (
 	"sync"
 
 	"github.com/gorilla/mux"
-	"github.com/lovoo/goka"
-	"github.com/lovoo/goka/web/templates"
+	"github.com/leepro/goka"
+	"github.com/leepro/goka/web/templates"
 )
 
 var baseTemplates = append(templates.BaseTemplates) // "web/templates/monitor/menu.go.html"
